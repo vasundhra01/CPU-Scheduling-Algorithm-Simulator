@@ -1,51 +1,76 @@
-# CPU Scheduling Simulator
+# CPU Scheduling Algorithm Simulator
 
-A web-based simulator that visualizes and compares classic CPU scheduling algorithms.  
-This project is designed to help students understand how different scheduling strategies affect waiting time, turnaround time, and CPU utilization.
+## Overview
+This project is a **CPU Scheduling Algorithm Simulator** designed to visualize and compare
+classic CPU scheduling strategies used in operating systems. The simulator allows users to
+input process parameters and observe how different scheduling algorithms affect execution
+order and performance metrics.
 
----
-
-## 📌 Features
-
-- Interactive simulation of CPU scheduling algorithms
-- Supports multiple processes with arrival and burst times
-- Visual timeline (Gantt chart) representation
-- Automatic calculation of:
-  - Waiting Time
-  - Turnaround Time
-  - Average metrics for comparison
-- Clean and responsive UI built with modern web tools
+The goal of this project is to provide a clear, interactive way to understand scheduling
+behavior, trade-offs, and fairness across algorithms.
 
 ---
 
-## 🧠 Algorithms Implemented
+## Algorithms Implemented
+The simulator supports the following CPU scheduling algorithms:
 
 - First Come First Serve (FCFS)
 - Shortest Job First (SJF)
 - Shortest Remaining Time First (SRTF)
 - Priority Scheduling
-- Round Robin (with configurable time quantum)
+- Round Robin
+
+Both **preemptive and non-preemptive** behaviors are handled where applicable.
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Next.js** (React framework)
-- **TypeScript**
-- **Tailwind CSS**
-- **Node.js**
+## Features
+- Interactive simulation of process scheduling
+- Dynamic calculation of:
+  - Waiting Time
+  - Turnaround Time
+  - Average Waiting Time
+  - Average Turnaround Time
+- Visualization of execution order using a Gantt-style timeline
+- Comparison of algorithm performance under different arrival and burst time scenarios
 
 ---
 
-## 🚀 Getting Started
+## How It Works
+1. Users provide process details such as arrival time, burst time, and priority.
+2. The selected scheduling algorithm determines execution order.
+3. The simulator computes scheduling metrics for each process.
+4. Results are displayed visually to help analyze algorithm behavior and efficiency.
 
-### Prerequisites
-- Node.js (v18 or later)
-- npm
+---
 
-### Installation
+## Technologies Used
+- Frontend: React, TypeScript
+- Styling: Tailwind CSS
+- Backend / Logic: Node.js
+- Core Concepts: Operating Systems, Scheduling Algorithms
 
-```bash
-git clone https://github.com/your-username/CPU-scheduling.git
-cd CPU-scheduling
-npm install
+---
+
+## Use Cases
+- Understanding OS scheduling concepts
+- Comparing algorithm efficiency and fairness
+- Academic demonstrations and learning
+- Interview preparation for operating systems topics
+
+---
+
+
+## Future Improvements
+- Add support for multilevel queue scheduling
+- Include context switch overhead in metrics
+- Export simulation results
+- Improve visualization for large process sets
+
+---
+
+## Conclusion
+This project demonstrates the practical implementation of core operating system scheduling
+algorithms and highlights the trade-offs between fairness, efficiency, and response time.
+It serves as an educational tool to better understand how CPUs allocate execution time
+among competing processes.
